@@ -10,19 +10,17 @@
   </head>
 
   <body>
-    <main>
-      <div class="stopwatch-box">
-        <svg width="200" height="200">
-          <circle cx="100" cy="100" r="90" class="circle-bg" />
-          <circle cx="100" cy="100" r="90" class="circle" />
-          <circle id="dot" r="6" fill="#ff9800" />
-        </svg>
-        <h1 class="time-display" id="display">00: 00 : 00</h1>
+    <main class="stopwatch-container">
+      <div class="stopwatch-face">
+        <div class="pointer" id="pointer"></div>
       </div>
 
+      <div class="time-display" id="display">00:00:00.00</div>
+
       <div class="btns">
-        <button id="startstop">Start</button>
-        <button id="reset">Stop</button>
+        <button id="startStop">Start</button>
+        <button id="reset">Reset</button>
+        <button id="lap">Lap</button>
       </div>
     </main>
 
